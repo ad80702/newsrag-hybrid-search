@@ -1,4 +1,4 @@
-# NewsRAG — Hybrid RAG News Q&A System
+# NewsRAG - Hybrid RAG News Q&A System
 
 A question-answering system built on top of real, live news articles. Instead of relying on an LLM's fixed training knowledge, this project retrieves relevant article content and generates answers grounded in that retrieved text.
 
