@@ -12,7 +12,7 @@ Guardian API → Chunking → Embeddings → FAISS + BM25 (Hybrid Search)
 ```
 
 1. A question is checked for basic validity (not empty, not too short)
-2. Hybrid search retrieves the most relevant article chunks — FAISS handles semantic/meaning-based matches, BM25 handles exact keyword matches, and the two are combined into one ranked result
+2. Hybrid search retrieves the most relevant article chunks - FAISS handles semantic/meaning-based matches, BM25 handles exact keyword matches, and the two are combined into one ranked result
 3. The retrieved chunks are passed to Llama 3.1 with explicit instructions to answer only using that context, and to say so if the context isn't sufficient
 4. Each sentence in the answer is compared against the retrieved chunks (cosine similarity) to identify which chunk it's most likely based on
 5. The question, answer, and expandable source chunks are shown in a Streamlit web app
@@ -92,4 +92,5 @@ MIT License
 ## Author
 
 Aditi Manivannan
-Github: ad80702
+
+Github: @ad80702
